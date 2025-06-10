@@ -48,7 +48,7 @@
 
 @layer utilities {
   .animate-scroll {
-    animation: scroll-left 5s linear infinite;
+    animation: scroll-left 20s linear infinite;
   }
 
   .pause-animation {
@@ -60,7 +60,7 @@
       transform: translateX(0%);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translateX(-198%);
     }
   }
 }

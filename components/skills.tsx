@@ -1,6 +1,5 @@
 "use client";
-import { Code2, Database, Server, Terminal } from "lucide-react";
-import { motion } from "framer-motion";
+
 import {
   FaHtml5,
   FaCss3Alt,
@@ -8,7 +7,6 @@ import {
   FaReact,
   FaNodeJs,
   FaGit,
-  FaGithub,
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -21,6 +19,21 @@ import {
 import Merngrid from "./mernGrid";
 
 const skills = [
+  { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
+  { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
+  { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
+  { name: "TypeScript", icon: <SiTypescript className="text-blue-600" /> },
+  { name: "React", icon: <FaReact className="text-cyan-400" /> },
+  {
+    name: "Next.js",
+    icon: <SiNextdotjs className="text-gray-800 dark:text-white" />,
+  },
+  { name: "Node.js", icon: <FaNodeJs className="text-green-600" /> },
+  { name: "GraphQL", icon: <SiGraphql className="text-pink-500" /> },
+  { name: "MongoDB", icon: <SiMongodb className="text-green-700" /> },
+  { name: "Apollo", icon: <SiApollographql className="text-indigo-500" /> },
+  { name: "Jest", icon: <SiJest className="text-rose-500" /> },
+  { name: "Git", icon: <FaGit className="text-orange-600" /> },
   { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
   { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
   { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
