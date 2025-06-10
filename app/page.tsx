@@ -2,6 +2,9 @@
 import { useState } from "react";
 import AboutMe from "@/components/aboutMe";
 import Header from "@/components/header";
+import Skills from "@/components/skills";
+import Projects from "@/components/projects";
+import Contact from "@/components/contact";
 
 const sections = ["about", "skills", "projects", "contact"];
 
@@ -25,7 +28,12 @@ export default function HomePage() {
         />
       </div>
       <div className="relative h-screen w-screen pt-20 dark:bg-slate-900">
-        <AboutMe onSectionChange={handleSectionChange} />
+        {activeSection === "about" ? (
+          <AboutMe onSectionChange={handleSectionChange} />
+        ) : null}
+        {activeSection === "skills" ? <Skills /> : null}
+        {activeSection === "projects" ? <Projects /> : null}
+        {activeSection === "contact" ? <Contact /> : null}
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
 "use client";
 import { HeadphonesIcon, Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
-import Button from "./button";
-import ButtonIcon from "./buttonIcon";
+import Button from "./customUI/button";
+import ButtonIcon from "./customUI/buttonIcon";
 import HeaderNav from "./headerNav";
 
 export interface HeaderProps {

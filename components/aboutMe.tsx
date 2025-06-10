@@ -1,6 +1,6 @@
 import { ChevronRight } from "lucide-react";
-import Button from "./button";
-import ButtonIcon from "./buttonIcon";
+import Button from "./customUI/button";
+import ButtonIcon from "./customUI/buttonIcon";
 
 const About = ({
   onSectionChange,
