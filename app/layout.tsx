@@ -6,9 +6,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Next.js Setup",
-  description: "A complete Next.js setup with TypeScript and Tailwind CSS",
-  generator: "v0.dev",
+  title: "Itgelt Portfolio",
+  description: "MERN-Stuck developer portfolio showcasing projects and skills",
 };
 
 export default function RootLayout({
