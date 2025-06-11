@@ -115,7 +115,7 @@ export default function ScrollingSkills() {
         </div>
         <div className="flex bg-gray-900 dark:bg-slate-100 gap-0">
           <div className="w-2/3 rounded-br-3xl bg-slate-100 dark:bg-gray-900 flex items-center justify-center">
-            <div className="relative w-5/6 mx-auto overflow-hidden">
+            <div className="relative w-5/6 mx-auto overflow-hidden h-full">
               <h2 className="text-3xl font-semibold mx-auto w-fit py-6 dark:text-gray-400 text-gray-800 ">
                 Skills & Technology
               </h2>
