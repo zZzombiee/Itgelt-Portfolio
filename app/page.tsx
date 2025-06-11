@@ -20,14 +20,14 @@ export default function HomePage() {
   };
 
   return (
-    <div>
-      <div className="absolute top-0 left-0 w-screen z-10">
+    <div className="dark:bg-slate-900 bg-slate-100">
+      <div className="absolute top-0 left-0 w-screen z-10 ">
         <Header
           activeSection={activeSection}
           onSectionChange={handleSectionChange}
         />
       </div>
-      <div className="relative h-screen w-screen pt-20 dark:bg-slate-900">
+      <div className="relative h-screen w-screen pt-20 ">
         {activeSection === "about" ? (
           <AboutMe onSectionChange={handleSectionChange} />
         ) : null}

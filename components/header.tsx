@@ -25,8 +25,8 @@ const Header = ({ activeSection, onSectionChange }: HeaderProps) => {
   return (
     <header>
       <nav className="flex w-screen">
-        <div className="bg-gray-800 dark:bg-white w-1/6">
-          <div className="flex p-8 bg-white rounded-tr-[48px] h-full dark:bg-slate-900 items-center justify-center">
+        <div className="bg-gray-800 dark:bg-slate-100 w-1/6">
+          <div className="flex p-8 bg-slate-100 rounded-tr-[48px] h-full dark:bg-slate-900 items-center justify-center">
             <Button title="Itgelt" />
           </div>
         </div>
@@ -34,8 +34,8 @@ const Header = ({ activeSection, onSectionChange }: HeaderProps) => {
           activeSection={activeSection}
           onSectionChange={onSectionChange}
         />
-        <div className="bg-gray-800 dark:bg-white w-3/6">
-          <div className="bg-white p-6 w-full rounded-tl-[48px] dark:bg-slate-900">
+        <div className="bg-gray-800 dark:bg-slate-100 w-3/6">
+          <div className="bg-slate-100 p-6 w-full rounded-tl-[48px] dark:bg-slate-900">
             <div className="flex justify-end w-full rounded-tl-[48px] gap-4 p-2 pl-8">
               <button
                 onClick={() => setIsDarkMode(!isDarkMode)}

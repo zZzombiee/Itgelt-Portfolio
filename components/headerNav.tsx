@@ -5,10 +5,10 @@ const sections = ["about", "skills", "projects", "contact"];
 const HeaderNav = ({ activeSection, onSectionChange }: HeaderProps) => {
   const activeIndex = sections.indexOf(activeSection);
   return (
-    <div className="bg-gray-800 dark:bg-white p-6 rounded-b-[48px]">
-      <div className="bg-white w-full rounded-full p-4 dark:bg-slate-900 relative overflow-hidden">
+    <div className="bg-gray-800 dark:bg-slate-100 p-6 rounded-b-[48px]">
+      <div className="bg-slate-100 w-full rounded-full p-4 dark:bg-slate-900 relative overflow-hidden">
         <div
-          className="absolute top-[9px] left-4 h-[38px] px-4 py-2 bg-gray-800 dark:bg-white rounded-full text-white dark:text-black flex items-center justify-center transition-transform duration-300 ease-in-out"
+          className="absolute top-[9px] left-4 h-[38px] px-4 py-2 bg-gray-800 dark:bg-slate-100 rounded-full text-white dark:text-black flex items-center justify-center transition-transform duration-300 ease-in-out"
           style={{
             transform: `translateX(${activeIndex * 96}px)`,
           }}

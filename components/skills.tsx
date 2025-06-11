@@ -71,10 +71,10 @@ export default function ScrollingSkills() {
       <p className="text-center text-xl dark:text-gray-400 text-gray-800 pt-0 max-w-3xl mx-auto">
         A MERN Stack Software Engineer with both theoretical and practical
         knowledge gained from completing the Pinecone Academy program.
-        <p className="dark:text-gray-600">
-          Proficient in writing unit and integration tests with Jest to ensure
-          code quality and system reliability
-        </p>
+      </p>
+      <p className="text-center text-xl dark:text-gray-600 pt-0 max-w-3xl mx-auto">
+        Proficient in writing unit and integration tests with Jest to ensure
+        code quality and system reliability
       </p>
 
       <div>
