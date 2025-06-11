@@ -16,7 +16,7 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "XoonHub - Food Delivery Platform",
+      title: "XooлHub - Food Delivery Platform",
       description:
         "A food delivery platform that allows users to order meals from the nearest branch of their preferred restaurants. Restaurant owners can also register their establishments, manage their menu, and receive customer orders through the platform. Features include real-time order tracking, location-based services using maps, customer reviews, and ratings to enhance user experience.",
       technologies: [
@@ -64,7 +64,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8 pt-40 bg-slate-100">
+    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8 pt-40 bg-slate-100 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
@@ -103,7 +103,7 @@ const Projects = () => {
                     <Badge
                       key={tech}
                       variant="secondary"
-                      className="text-xs bg-slate-200 cursor-default"
+                      className="text-xs bg-slate-200 cursor-default dark:bg-slate-700"
                     >
                       {tech}
                     </Badge>
