@@ -51,9 +51,9 @@
     animation: scroll-left 20s linear infinite;
   }
 
-  .pause-animation {
-    animation-play-state: paused;
-  }
+  /* .animate-scroll:hover {
+    animation-duration: 50s;
+  } */
 
   @keyframes scroll-left {
     0% {
