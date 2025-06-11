@@ -8,7 +8,10 @@ const About = ({
   onSectionChange: (section: string) => void;
 }) => {
   return (
-    <section id="about" className="px-6 py-16 max-w-3xl mx-auto ">
+    <section
+      id="about"
+      className="px-6 max-w-3xl mx-auto h-full flex flex-col justify-center"
+    >
       <h2 className="text-md font-semibold mb-6 dark:text-gray-400 text-gray-700">
         Hi, my name is
       </h2>

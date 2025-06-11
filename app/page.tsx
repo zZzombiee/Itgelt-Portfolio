@@ -27,7 +27,7 @@ export default function HomePage() {
           onSectionChange={handleSectionChange}
         />
       </div>
-      <div className="relative h-screen w-screen pt-20 ">
+      <div className="relative h-screen w-screen  ">
         {activeSection === "about" ? (
           <AboutMe onSectionChange={handleSectionChange} />
         ) : null}

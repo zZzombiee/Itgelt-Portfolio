@@ -13,12 +13,12 @@ const Merngrid = () => {
     <motion.div
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8, delay: 0.4 }}
-      className="rounded-3xl p-6 bg-white dark:bg-gray-900 text-center shadow-lg backdrop-blur-md rounded-br-none flex flex-col"
+      className="rounded-3xl p-6 bg-slate-100 dark:bg-gray-900 text-center shadow-lg backdrop-blur-md rounded-br-none flex flex-col"
     >
-      <h3 className="text-2xl font-bold mb-4 dark:text-gray-300">
+      <h3 className="text-3xl font-semibold mb-4 dark:text-gray-300 text-gray-800">
         MERN Stack Specialist
       </h3>
-      <p className="opacity-90 mb-8 max-w-2xl mx-auto dark:text-gray-400 text-gray-800">
+      <p className="opacity-90 mb-8 max-w-2xl mx-auto dark:text-gray-400 text-gray-700">
         Building full-stack applications using MongoDB, Express.js, React, and
         Node.js
       </p>
@@ -37,7 +37,7 @@ const Merngrid = () => {
               stiffness: 200,
             }}
             whileHover={{ scale: 1.15 }}
-            className="flex flex-col items-center space-y-3 bg-gray-200 dark:bg-gray-800 backdrop-blur-sm rounded-xl px-5 py-2 w-20 shadow-lg hover:shadow-cyan-500/50 transition-shadow"
+            className="flex flex-col items-center bg-gray-200 dark:bg-gray-800 backdrop-blur-sm rounded-xl px-5 py-2 w-20 shadow-lg hover:shadow-cyan-500/50 transition-shadow text-gray-700 dark:text-gray-300 cursor-pointer"
           >
             {tech.icon}
             <span className="font-medium text-sm">{tech.name}</span>
