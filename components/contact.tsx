@@ -11,77 +11,77 @@ import { useToast } from "@/hooks/use-toast";
 import { Github, Instagram, Linkedin, Mail, Phone, Send } from "lucide-react";
 import { z } from "zod";
 
-const formSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
-  email: z.string().email({ message: "Please enter a valid email address." }),
-  subject: z
-    .string()
-    .min(5, { message: "Subject must be at least 5 characters." }),
-  message: z
-    .string()
-    .min(10, { message: "Message must be at least 10 characters." }),
-});
+// const formSchema = z.object({
+//   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
+//   email: z.string().email({ message: "Please enter a valid email address." }),
+//   subject: z
+//     .string()
+//     .min(5, { message: "Subject must be at least 5 characters." }),
+//   message: z
+//     .string()
+//     .min(10, { message: "Message must be at least 10 characters." }),
+// });
 
-async function submitContactForm(formData: FormData) {
-  // "use server";
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+// async function submitContactForm(formData: FormData) {
+//   // "use server";
+//   await new Promise((resolve) => setTimeout(resolve, 1000));
 
-  return { success: true };
-}
+//   return { success: true };
+// }
 
 const Contact = () => {
-  const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [formErrors, setFormErrors] = useState<Record<string, string>>({});
+  // const { toast } = useToast();
+  // const [isSubmitting, setIsSubmitting] = useState(false);
+  // const [formErrors, setFormErrors] = useState<Record<string, string>>({});
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
 
-    const formData = new FormData(e.currentTarget);
-    const formValues = {
-      name: formData.get("name") as string,
-      email: formData.get("email") as string,
-      subject: formData.get("subject") as string,
-      message: formData.get("message") as string,
-    };
+  //   const formData = new FormData(e.currentTarget);
+  //   const formValues = {
+  //     name: formData.get("name") as string,
+  //     email: formData.get("email") as string,
+  //     subject: formData.get("subject") as string,
+  //     message: formData.get("message") as string,
+  //   };
 
-    try {
-      formSchema.parse(formValues);
-      setFormErrors({});
+  //   try {
+  //     formSchema.parse(formValues);
+  //     setFormErrors({});
 
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+  //     await new Promise((resolve) => setTimeout(resolve, 1000));
 
-      toast({
-        title: "Message sent!",
-        description: "Thanks for reaching out. I'll get back to you soon.",
-      });
+  //     toast({
+  //       title: "Message sent!",
+  //       description: "Thanks for reaching out. I'll get back to you soon.",
+  //     });
 
-      e.currentTarget.reset();
-    } catch (error) {
-      if (error instanceof z.ZodError) {
-        const errors: Record<string, string> = {};
-        error.errors.forEach((err) => {
-          if (err.path[0]) {
-            errors[err.path[0] as string] = err.message;
-          }
-        });
-        setFormErrors(errors);
-      }
+  //     e.currentTarget.reset();
+  //   } catch (error) {
+  //     if (error instanceof z.ZodError) {
+  //       const errors: Record<string, string> = {};
+  //       error.errors.forEach((err) => {
+  //         if (err.path[0]) {
+  //           errors[err.path[0] as string] = err.message;
+  //         }
+  //       });
+  //       setFormErrors(errors);
+  //     }
 
-      toast({
-        title: "Error",
-        description: "Please check the form for errors.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  //     toast({
+  //       title: "Error",
+  //       description: "Please check the form for errors.",
+  //       variant: "destructive",
+  //     });
+  //   } finally {
+  //     setIsSubmitting(false);
+  //   }
+  // };
 
   return (
     <div className="min-h-screen bg-slate-100 dark:bg-gray-900 py-12 px-4 sm:px-6 lg:px-8 pt-40">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
             Get In Touch
@@ -92,8 +92,8 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-          <Card className="shadow-lg">
+        <div className="grid grid-cols-1 gap-8 items-start">
+          {/* <Card className="shadow-lg">
             <CardContent className="pt-6">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
@@ -213,7 +213,7 @@ const Contact = () => {
                 </Button>
               </form>
             </CardContent>
-          </Card>
+          </Card> */}
 
           {/* Contact Info */}
           <div className="space-y-8">
@@ -247,7 +247,7 @@ const Contact = () => {
                         className="bg-slate-100 dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-800"
                       >
                         <a
-                          href="https://github.com/yourusername"
+                          href="https://github.com/zZzombiee"
                           target="_blank"
                           rel="noopener noreferrer"
                           aria-label="GitHub"
@@ -298,7 +298,7 @@ const Contact = () => {
                           className="cursor-pointer"
                         >
                           <Phone className="w-5 h-5 " />
-                          <p className="font-light">+956 8964-6550</p>
+                          <span className="font-light">+956 8964-6550</span>
                         </p>
                       </Button>
                     </div>

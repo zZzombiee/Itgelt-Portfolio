@@ -32,34 +32,7 @@ const Projects = () => {
       ],
       githubUrl: "https://github.com/Pinecone-2024-LEAP-1G/Uberdash",
       deployedUrl: "https://uberdash-psi.vercel.app/",
-      image: "/images/hoolHubImg.png", // Та энд зураг байрлуулж болно
-    },
-
-    {
-      id: 2,
-      title: "Task Management App",
-      description:
-        "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Express"],
-      githubUrl: "https://github.com/yourusername/task-manager",
-      deployedUrl: "https://task-manager-app.netlify.app",
-      image: "/placeholder.svg?height=200&width=400",
-    },
-    {
-      id: 3,
-      title: "Weather Dashboard",
-      description:
-        "A responsive weather dashboard that displays current weather conditions, forecasts, and interactive maps using weather APIs.",
-      technologies: [
-        "Vue.js",
-        "JavaScript",
-        "OpenWeather API",
-        "Chart.js",
-        "CSS3",
-      ],
-      githubUrl: "https://github.com/yourusername/weather-dashboard",
-      deployedUrl: "https://weather-dashboard.surge.sh",
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/images/hoolHubImg.png",
     },
   ];
 
